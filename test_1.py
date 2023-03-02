@@ -1,1 +1,1 @@
-print("home work 1")
+print("homework 1")
