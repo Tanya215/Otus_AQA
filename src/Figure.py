@@ -1,3 +1,3 @@
 class Figure:
-    def __init__(self, name: object) -> object:
+    def __init__(self, name):
         self.name = name

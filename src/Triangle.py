@@ -21,14 +21,14 @@ class Triangle(Figure):
                 half_perimeter - self.edge_3))
         return area_calc
 
-
+    @property
     def is_triangle_exist(self):
         assert isinstance(self.edge_1, object)
-        return (self.edge_1 < self.edge_2 + self.edge_3) and (self.edge_1 + self.edge_3 > self.edge_2) and (self.edge_3 < self.edge_2 + self.edge_1)
+        return (self.edge_1 < self.edge_2 + self.edge_3) and (self.edge_1 + self.edge_3 > self.edge_2) and (
+                    self.edge_3 < self.edge_2 + self.edge_1)
 
     def add_area(self, figure) -> float:
         if isinstance(figure, Figure):
             return Triangle.area(self) + figure.area()
         else:
             raise ValueError("It's not figure")
-
