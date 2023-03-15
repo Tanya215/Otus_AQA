@@ -8,7 +8,7 @@ from src.Triangle import Triangle
 
 @pytest.fixture(scope='module')
 def create_figure():
-    figure_1 = Figure('Figure 1')
+    figure_1 = Figure()
     yield figure_1
 
 
@@ -20,7 +20,7 @@ def create_triangle():
 
 @pytest.fixture(scope='module')
 def create_not_triangle():
-    triangle_2 = Triangle('Triangle 1', 3, 4, 10)
+    triangle_2 = Triangle('Triangle 2', 3, 4, 10)
     yield triangle_2
 
 

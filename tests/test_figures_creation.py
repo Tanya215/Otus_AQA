@@ -6,25 +6,24 @@ from src.Triangle import Triangle
 
 
 def test_figure_creation(create_figure):
-    if isinstance(create_figure, Figure) is True:
-        pass
+    assert isinstance(create_figure, Figure)
 
 
 def test_triangle_creation(create_triangle):
-    if isinstance(create_triangle, Triangle) is True:
-        pass
+    assert isinstance(create_triangle, Triangle)
+    assert create_triangle.name == 'Triangle 1'
 
 
 def test_rectangle_creation(create_rectangle):
-    if isinstance(create_rectangle, Rectangle) is True:
-        pass
+    assert isinstance(create_rectangle, Rectangle)
+    assert create_rectangle.name == 'Rec 1'
 
 
 def test_square_creation(create_square):
-    if isinstance(create_square, Square) is True:
-        pass
+    assert isinstance(create_square, Square)
+    assert create_square.name == 'Square 1'
 
 
 def test_circle_creation(create_circle):
-    if isinstance(create_circle, Circle) is True:
-        pass
+    assert isinstance(create_circle, Circle)
+    assert create_circle.name == 'Circle 1'
